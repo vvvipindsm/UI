@@ -1,0 +1,191 @@
+/* project class */
+.smartphone {
+    position: relative;
+    width: 360px;
+    height: 640px;
+    margin: auto;
+    border: 16px black solid;
+    border-top-width: 60px;
+    border-bottom-width: 60px;
+    border-radius: 36px;
+  }
+  div#info {
+    position: absolute;
+    background: #80808099;
+    border: 1px solid #75505073;
+    color: white;
+    padding: 91px 6px;
+    display: none;
+    width: 139px;
+}
+  /* The horizontal line on the top of the device */
+  .smartphone:before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 5px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 10px;
+  }
+  
+  /* The circle on the bottom of the device */
+  .smartphone:after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 50%;
+    bottom: -65px;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 50%;
+  }
+  
+  /* The screen (or content) of the device */
+  .smartphone .content {
+    width: 360px;
+    height: 640px;
+    background: white;
+  }
+#view_sec     {
+    border: 1px solid gray;
+}
+.code { 
+    border: 1px solid #d8d5d5;
+}
+.addClassitems {
+    background: gray;
+    color: white;
+    padding: 1px 7px;
+    border-radius: 2px;
+    box-shadow: 1px 2px #827d7d52;
+    margin-right: 9px;
+
+}
+.config_sec {
+    display: flex;
+    margin: 10px;
+    padding: 9px;
+    border-bottom: 1px solid #d7cdcd;
+}
+.code {
+    position: absolute;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    background: #e6e6e6;
+    top: 0;
+    left: 0;
+    padding: 4%;
+    z-index: 99999;
+    /* display: none; */
+}
+
+span#code_close {
+    position: absolute;
+    right: 35px;
+}
+.radio_btn {
+background: #9d8553;
+padding: 3px 8px;
+border-radius: 9px;
+border: 1px solid #f2f2f2;
+color: white;
+}
+.radio_btn_active {
+background: #e78e8e;;
+
+border: 1px solid 999999;
+color: white;
+}
+p#error {
+color: red;
+}
+.section {
+    border:1px solid gray;
+    padding: 10px;
+    display: flex;  
+}
+.activeDom{
+    border :3px solid red;
+}
+
+
+/* project class name ends */
+
+.container {
+    display: flex;
+    flex: 1;
+    border: 1px solid;
+    justify-content: space-around;
+    height: -webkit-fill-available;
+}
+.column {
+    display: flex;
+    border: 1px solid;
+    flex: 1;
+    flex-direction: column;
+}
+.col-8 {
+    display: flex;
+    flex-basis: 80%;
+}
+.col-9 {
+    display: flex;
+    flex-basis: 90%;
+}
+.col-10 {
+    display: flex;
+    flex-basis: 10%0;
+}
+.col-2 {
+    display: flex;
+    flex-basis: 20%;
+}
+.col-1 {
+    display: flex;
+    flex-basis: 10%;
+}
+.col-3 {
+    display: flex;
+    flex-basis: 30%;
+}
+.col-6 {
+    display: flex;
+    flex-basis: 60%;
+}
+.col-4 {
+    display: flex;
+    flex-basis: 40%;
+}
+.col-0-5 {
+    display: flex;
+    flex-basis: 5%;
+}
+.box {
+    padding: 6px;
+}
+/* popup sec */
+.p_container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 37px;
+}
+
+.p_left {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    flex: 1;
+}
+.p_copy {
+    border: 1px solid #ffd6d6;
+    display: flex;
+    justify-content: center;
+    cursor: copy;
+    padding: 6px;
+}

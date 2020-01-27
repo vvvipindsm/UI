@@ -1,0 +1,529 @@
+{
+
+	    "Console Log": {
+	        "prefix": "logmes",
+	        "body": [
+	            "console.log($1,$2)",
+	            "adadadad"
+	        ]
+	    },
+	  "Console Loaaag": {
+		        "prefix": "es_comment",
+		        "body": [
+		            "{/* */}"
+		            
+		        ]
+		    },
+	
+	    "classs": {
+		        "prefix": "es_class_fn",
+		        "body": [
+		            "class $1 {",
+		            "remoteAction(a) {",
+					"return a",
+					"}",
+					"}",
+					"const $2 = new $1();",
+					"export default $1",
+		        ]
+		    },
+
+  
+	  "lyf Log": {
+		        "prefix": "es_compoentDidUpdate",
+		        "body": [
+					"componentDidUpdate(prevProps, prevState) {",
+		            "if(prevProps.loadingOrder!==this.props.loadingOrder){",
+		            "console.log('compoent update',this.props.loadingOrder)",
+					"} }"
+		        ]
+		    },
+        
+	 "Navf s": {
+		        "prefix": "es_nav_get_params",
+		        "body": [
+		            "const itemId = this.props.navigation.getParam('itemId', 'NO-ID');",
+		          
+		        ]
+		    },
+		  "Viewdfs": {
+			        "prefix": "es_log",
+			        "body": [
+			            "console.log($1)"
+			        ]
+			    },
+
+
+	    "View": {
+	        "prefix": "es_view",
+	        "body": [
+	            "<View style={styles.$1}><Text>$2</Text></View>"
+	        ]
+	    },
+	    "Text2": {
+	        "prefix": "es_text",
+	        "body": [
+	            "<Text style={styles.$1}>$2</Text>"
+	        ]
+	    },
+	 
+	    "Image2": {
+	        "prefix": "es_image",
+	        "body": [
+	            "<Image source={pic} style={{width: 193, height: 110}}/>",
+	            "let pic = {",
+	            "uri: 'https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg'",
+	            "};"
+	        ]
+	    },
+	    "Image1": {
+	        "prefix": "es_components",
+	        "body": [
+	            "import React from 'react';",
+	            "import { View } from 'react-native';",
+	            "const $1 = () => {",
+	            "return <View>$2 </View>",
+	            "}",
+	            "export default $1;"
+	        ]
+	    },
+	    "es4": {
+	        "prefix": "es_componentwillmount",
+	        "body": [
+	            "componentWillMount() {",
+	            "}",
+	        ]
+	    },
+	    "es3": {
+	        "prefix": "es_fu_component",
+	        "body": [
+	            "import React,{Component} from 'react';",
+	            "import { View,Text,StyleSheet } from 'react-native';",
+	            "export default class $1 extends  Component {",
+	            "render() {",
+	            "return (",
+	            "<View>",
+	            "<Text>testt</Text>",
+	            "</View>",
+	            ");",
+	            "}",
+	            "}",
+				"const styles = StyleSheet.create({",
+		"});"
+	        ]
+	    },
+	    "es2": {
+	        "prefix": "es_import",
+	        "body": [
+	            "import $1 from $2;"
+	        ]
+	    },
+	    "es1": {
+	        "prefix": "es_style",
+	        "body": [
+	            " ${1:container} : {",
+	            "flexDirection : 'column',",
+	            "flex:1,",
+	            "backgroundColor : 'green',",
+	            "justifyContent : 'flex-start',",
+	            "alignItems : 'center',",
+	            "},"
+	        ]
+	    },
+	    "es6": {
+	        "prefix": "es_touchableOpacity",
+	        "body": "<TouchableOpacity onPress='this.test()'><Text>${1:dfdfdf}</Text></TouchableOpacity>"
+	    },
+	    "styl1": {
+	        "prefix": "es_flexD",
+	        "body": "flexDirection:${1:'row',}"
+	    },
+	    "styl2": {
+	        "prefix": "es_flexW",
+	        "body": "flexWrap:${1:'nowrap'}"
+	    },
+	    "styl3": {
+	        "prefix": "es_justifyContent",
+	        "body": "justifyContent:${1:'flex-start'}"
+	    },
+	    "styl4": {
+	        "prefix": "es_alignItems",
+	        "body": "alignItems:${1:'center'}"
+	    },
+	    "styl5": {
+	        "prefix": "es_flexGrow",
+	        "body": "flexGrow:${1:1}"
+	    },
+	    "styl6": {
+	        "prefix": "es_flexShrink",
+	        "body": "flexShrink:${1:1}"
+	    },
+	    "styl7": {
+	        "prefix": "es_marginBottom",
+	        "body": "marginBottom:${1:'100px'}"
+	    },
+	    "styl8": {
+	        "prefix": "es_stylesheet",
+	        "body": [
+	            "const styles = StyleSheet.create({",
+	            "bigblue: {",
+	            "  color: 'blue',",
+	            " fontWeight: 'bold',",
+	            "fontSize: 30,",
+	            "},",
+	            " });",
+	        ]
+	    },
+	    "styl72": {
+	        "prefix": "es_width",
+	        "body": "width:${1:'100px'},"
+	    },
+	    "styl722": {
+	        "prefix": "es_height",
+	        "body": "height:${1:'100px'},"
+	    },
+	    "state": {
+	        "prefix": "es_state",
+	        "body": [
+	            "constructor(props) {",
+	            "super(props);",
+	            "this.state = {",
+	            "luncher: false",
+	            "}",
+	            "}"
+	        ]
+	    },
+	    "lycycel": {
+	        "prefix": "es_constructor",
+	        "body": [
+	            "constructor(props) {",
+	            "super(props);",
+	            "}"
+	        ]
+	    },
+	    "set state": {
+	        "prefix": "es_set_state",
+	        "body": [
+	            "this.setState({ luncher: true })"
+	        ]
+	    },
+	    "scrll": {
+	        "prefix": "es_scrollview",
+	        "body": [
+	            "state = {",
+	            "names: [",
+	            "{ 'name': 'Ben', 'id': 1 },",
+	            "]",
+	            " }",
+	            " render() {",
+	            "  return (",
+	            "<View>",
+	            "<ScrollView ref={(ref) => this.myScroll = ref}>",
+	            "{",
+	            " this.state.names.map((item, index) => (",
+	            "<View key={item.id} >",
+	            "<Text>{item.name}</Text>",
+	            " </View>",
+	            " ))",
+	            " }",
+	            " </ScrollView>",
+	            " </View>",
+	            " );",
+	            " }",
+	            "}",
+	            "}"
+	        ]
+	    },
+	    "sbacaf": {
+	        "prefix": "es_image_background",
+	        "body": [
+	            "<ImageBackground source={...} style={{width: '100%', height: '100%'}}>",
+	            " <Text>Inside</Text>",
+	            "  </ImageBackground>"
+	        ]
+	    },
+	    "style_bor": {
+	        "prefix": "es_border",
+	        "body": [
+	            "${1:borderRadius: 10,}",
+	            "borderWidth: ${2:1},",
+	            "borderColor: '#fff'"
+	        ]
+	    },
+	    "style_flex": {
+	        "prefix": "es_alignSelf",
+	        "body": [
+	            "alignSelf:'stretch',",
+	        ]
+	    },
+	    "style_fleax": {
+	        "prefix": "es_color",
+	        "body": [
+	            "color:'white',",
+	        ]
+	    },
+	    "style_fleaxs": {
+	        "prefix": "es_fontSize",
+	        "body": [
+	            "fontSize:30,",
+	        ]
+	    },
+	    "style_fleaxdds": {
+	        "prefix": "es_backgroundcolor",
+	        "body": [
+	            "backgroundColor:'red',",
+	        ]
+	    },
+	    "style_stack": {
+	        "prefix": "es_nav_next",
+	        "body": [
+	            "this.props.navigation.navigate('App')",
+	        ]
+	    },
+	    "style_root": {
+	        "prefix": "es_nav_root",
+	        "body": [
+	            "import { createSwitchNavigator, createStackNavigator } from 'react-navigation';",
+	            "import SignInScreen from '../container/SignInScreen';",
+	            "import HomeScreen from '../container/HomeScreen';",
+	            "const AppStack = createStackNavigator(",
+	            " {",
+	            "  Home: HomeScreen,",
+	            " }",
+	            ");",
+	            "const AuthStack = createStackNavigator(",
+	            " {",
+	            "SignIn: SignInScreen",
+	            "});",
+	            "export default createSwitchNavigator(",
+	            "{",
+	            "AuthLoading: SignInScreen,",
+	            "App: AppStack,",
+	            " Auth: AuthStack,",
+	            " },",
+	            "{",
+	            " initialRouteName: 'AuthLoading',",
+	            "}",
+	            ");"
+	        ]
+	    },
+	    "style_stack_async": {
+	        "prefix": "es_async_componentDid",
+	        "body": [
+	            "sync componentWillMount() {",
+	        ]
+	    },  
+	    "redux_import": {
+	        "prefix": "es_redux_import",
+	        "body": [
+	            "import { createStore,applyMiddleware } from 'redux';",
+	            "import { Provider } from 'react-redux';",
+	            "import ReduxThunk from 'redux-thunk';",
+	
+	        ]
+	    },  
+	    "redux_reducer-starter": {
+	        "prefix": "es_redux_starter",
+	        "body": [
+	            "import { combineReducers } from 'redux'",
+	            "export default combineReducers({",
+	            " auth  : () => [],",
+	            "});"
+	
+	        ]
+	    }, 
+	    "redux_reducer-connect": {
+	        "prefix": "es_redux_connect",
+	        "body": [
+	            "import { Connect } from 'react-redux';",
+	            ]
+	    }, 
+	    "redux_props": {
+	        "prefix": "es_props",
+	        "body": [
+	            "this.props.${1:name}",
+	            ]
+	    }, 
+	    "redux_actions": {
+	        "prefix": "es_action_page",
+	        "body": [
+	            "Test = ({prop,value}) => {",
+	                "return(dispatch) => {",
+	                "dispatch({",
+	                "type : 'test',",
+	                "payload  :{prop,value}",
+	                "})",
+	                "}",
+	                "}",
+	                "export default Test;",
+	            ]
+	    }, 
+	    "redux_compoents": {
+	        "prefix": "es_redux_fu",
+	        "body": [
+	            "import React, { Component } from 'react';",
+	                "import { View, Text } from 'react-native';",
+	                "import { connect } from 'react-redux';",
+	                "import Test from '../actions/Test';",
+	                "class HomeScreen extends Component {",
+	                " render() {",
+	                " return (",
+	                "  <View>",
+	                "  <Text onPress={()=>this.props.Test({prop:'name',value:'sdfsf'})}>Home</Text>",
+	                "</View>",
+	                " );",
+	                "}",
+	                "}",
+	                "const mapStateToProps = state => {",
+	                "   return {",
+	                " a: state.test",
+	                "}",
+	                "}",
+	                "export default connect(mapStateToProps,{Test})(HomeScreen);",
+	                
+	            ]
+	    }, 
+	    "redux_redux_index": {
+	        "prefix": "es_redux_index_page",
+	        "body": [
+	            "import { combineReducers } from 'redux'",
+	            "export default combineReducers({",
+	            "test  : ()=>[],",
+	            " });"
+	            ]
+	    },
+	    "redux_redux_page": {
+	        "prefix": "es_redux_page",
+	        "body": [
+	            "const INITIAL  = { name : '',age: '' };",
+	            "export default (state = INITIAL , action) => {",
+	            "switch(action.type) {",
+	            " case 'test':",
+	            " return state;",
+	            " default :",
+	            " return state",
+	            "}",
+	            "}",
+	            ]
+	    },
+	    "redux_redux_nte": {
+	        "prefix": "es_toast",
+	        "body": [
+	             "ToastAndroid.show('Validation Failed', ToastAndroid.SHORT);"
+	            ]
+	    },
+	    "redux_redux": {
+	        "prefix": "es_class",
+	        "body": [
+	             "style={styles.$1}"
+	            ]
+	    },
+	    "style_font-familty": {
+	        "prefix": "es_fontFamily",
+	        "body": [
+	            "fontFamily: 'Roboto-Regular',"
+	            ]
+	    },
+	    "style_font-fasdamilty": {
+	        "prefix": "es_dimension",
+	        "body": [
+	            "var { height, width } = Dimensions.get('screen');"
+	            ]
+	    },
+	    "style_fosa": {
+	        "prefix": "es_icon",
+	        "body": [
+	            "<Icon name='home' size={10} color='#0e76bd' />"
+	            ]
+	    },
+	    "style_fsdfosa": {
+	        "prefix": "es_nav_null",
+	        "body": [
+	            "static navigationOptions = {",
+	                "header: null",
+	            "}",
+	            ]
+	    },
+	    "style_fsdsadadfosa": {
+	        "prefix": "es_arrow_fn",
+	        "body": [
+	            "${1:radioAction} = ($2) => {",
+	                "$3",
+	            "}",
+	            ]
+	    },
+	    "asdasd": {
+	        "prefix": "es_ref",
+	        "body": [
+	            "ref={input => { this.textInput = input }}",
+	            ]
+	    },
+	 "BackHandler": {
+		        "prefix": "es_backhandler",
+		        "body": [
+		            "componentWillMount() {",
+						"BackHandler.addEventListener('hardwareBackPress', this.backPressed);",
+						"}",
+						"componentWillUnmount() {",
+						"BackHandler.removeEventListener('hardwareBackPress', this.backPressed);",
+						"}",
+						"backPressed = () => {",
+						"this.props.navigation.goBack();",
+						"return true;",
+						"}",
+
+		            ]
+		    },
+		   "a": {
+			        "prefix": "es_object_foreach",
+			        "body": [
+			            "Object.keys(obj).forEach(function(key) {",
+						"var value = obj[key];",
+						"});"
+						
+			            ]
+			    },
+			   "aaa": {
+				        "prefix": "es_object_empty",
+				        "body": [
+				            "if(obj && obj !== 'null' && obj !== 'undefined';){}",
+							
+				            ]
+				    },
+				   "aaasss": {
+					        "prefix": "es_import_style",
+					        "body": [
+					            "import {app_common} from './styles/common'",
+								
+					            ]
+					    },
+				   "aaaasdasd": {
+					        "prefix": "es_linking",
+					        "body": [
+					            "url = 'https://compareandcall.com/login'",
+								"Linking.canOpenURL(url).then(supported => {",
+								"if (supported) {",
+								"Linking.openURL(url);",
+								"} else {",
+								"console.warn( + url);",
+								"}",
+								"  });"
+								
+					            ]
+					    },
+			
+
+					
+			
+	
+}
+		
+		
+		
+		
+			
+			
+		
+
+	
+	

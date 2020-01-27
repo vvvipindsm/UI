@@ -1,0 +1,137 @@
+
+{
+	// Place your snippets for php here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"lva": {
+		"prefix": "lv_pubf",
+		"body": [
+			"public function ${1:index}(){",
+			"$2",
+			"}"
+		]
+	},
+	"lv": {
+		"prefix": "lv_print",
+		"body": [
+			"echo '<pre>';",
+			"print_r(${1:$data});",
+			"echo '</pre>';"
+		]
+	},
+	"lv3": {
+		"prefix": "lv_db_inner_join",
+		"body": [
+			"$users = DB::table('${1:users}')",
+			"->join('${2:contacts}', 'users.id', '=', 'contacts.user_id')",
+			"->select('users.*', 'contacts.phone', 'orders.price')",
+			" ->get();"
+		]
+	},
+	"lv4": {
+		"prefix": "lv_pub_method",
+		"body": [
+			"public static function ForgingetSearch(){",
+			"if($data){",
+			" return true;",
+			" }",
+			"return false;",
+			"}"
+		]
+	},
+	"lv5": {
+		"prefix": "lv_segment_uri",
+		"body": [
+			"Request::segment()1",
+		]
+	},
+	"lv6": {
+		"prefix": "lv_php",
+		"body": [
+			"<?php ${1:echo 'sdfs';} ?>",
+		]
+	},
+	"lv123": {
+		"prefix": "php_date",
+		"body": [
+			"<?=date('d M Y', strtotime(${1:date})); ?>",
+		]
+	},
+	"lv124": {
+		"prefix": "lv_profiler",
+		"body": [
+			"DB: :connection()->enableQueryLog();",
+		]
+	},
+	"lsdv124": {
+		"prefix": "lv_load_asset_session",
+		"body": [
+			"use Session;",
+		]
+	},
+	"lsdv12s4": {
+		"prefix": "lv_load_asset_auth",
+		"body": [
+			"use Illuminate Support Facades Auth;",
+		]
+	},
+	"lsdv1asd2s4": {
+		"prefix": "lv_validation_exist",
+		"body": [
+			"unique:${1:posts}",
+		]
+	},
+	"s": {
+		"prefix": "lv_validation_date",
+		"body": [
+			"date",
+		]
+	},
+	"sss": {
+		"prefix": "lv_validation_boolean",
+		"body": [
+			"boolean",
+		]
+	},
+	"s22ss": {
+		"prefix": "lv_validation_numeric",
+		"body": [
+			"numeric",
+		]
+	},
+	"s2sdsd2ss": {
+		"prefix": "lv_validation_string",
+		"body": [
+			"regex:/^[a-zA-Z]+$/u|max:50",
+		]
+	},
+	"s2sdsd2asdsdss": {
+		"prefix": "php_random_key",
+		"body": [
+			"md5(uniqid(rand(), true))",
+		]
+	},
+	
+	
+
+	
+}
+
+
+
+
+
+            
+         
+            
+           

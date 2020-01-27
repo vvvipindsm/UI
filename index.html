@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- DgsHLRdKkaLZsXET9u7U -->
+</head>
+<script src="commonStyles.js"></script>
+<link rel="stylesheet" href="commonCss.css">
+
+<body>
+
+    <div class="info" id="info">
+        
+        
+    </div>
+    <!-- <br/><br/><input type="text" placeholder="Paste here for test" /> -->
+    <div class="container">
+        <div class="code" id="code_sec">
+            <span id="code_close" onclick="closeModel()">X</span>
+            <div class="p_container">
+                <div class="p_left">
+                    <div class="p_copy" id="styleCopy"
+                        onclick="$('#styleCopytext').focus();$('#styleCopytext').select()">Select all style</div>
+                    <div class="p_style_code" id="styleCode" contenteditable="true">
+                        <textarea name="a" id="styleCopytext" cols="70" rows="50" readonly="readonly">
+
+                       </textarea>
+                    </div>
+                </div>
+                <div class="p_left">
+                    <div class="p_copy" id="htmlCopy" onclick="handleCopy(this)">Click to copy</div>
+
+                    <textarea name="a" id="htmlCopytext" cols="70" rows="50" readonly="readonly">
+
+                        </textarea>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            
+<div class="smartphone col-8">
+        <div class="content">
+          <!-- <iframe src="/w3css/tryw3css_templates_band.htm" style="width:100%;border:none;height:100%" /> -->
+          <div class=" box" id="view_sec">
+
+          
+
+            </div>
+        </div>
+      </div>
+          
+            <div class="" id="view_sec_copy" style="display: none;">
+
+
+            </div>
+            <code class="col-1 box" id="html_code_sec">
+                shortcuts
+               </br>
+                a  : select last created dom </br>
+                b  : build code </br>
+                x  : close code </br>
+                c  : create dom </br>
+                d  : delete dom </br>
+            </code>
+
+
+            </code>
+            <div class="col-0-5 box">
+                <p id="error"></p>
+            </div>
+        </div>
+        <div class="column box" id="configure_sec">
+            Configure Dom
+            <div class="config_sec">
+                <div class="congi_label col-4">Platform</div>
+                <div class="col-6 inputs">
+                    <a class="radio_btn radio_btn_active" onclick="handleRadioBoxSeletion(this,'platform')">Web</a>
+                    <a class="radio_btn" onclick="handleRadioBoxSeletion(this,'platform')">React-native</a>
+
+                    <input type="hidden" id="platform" value="React-native">
+                </div>
+
+            </div>
+
+            <div class="config_sec">
+                <div class="congi_label col-4">Component</div>
+                <div class="col-6 inputs">
+                    <a class="radio_btn radio_btn_active" onclick="handleRadioBoxSeletion(this,'compoment')">View</a>
+                    <a class="radio_btn" onclick="handleRadioBoxSeletion(this,'compoment')">Text</a>
+
+                    <input type="hidden" id="compoment" value="View">
+                </div>
+
+            </div>
+            <div class="config_sec">
+                <div class="congi_label col-4">Class Name</div>
+                <div class="col-6 inputs">
+                    <input type="text" id="className" name="className" value="">
+                </div>
+
+            </div>
+            <div class="config_sec">
+                <div class="congi_label col-4">Common Name</div>
+                <div class="col-6 inputs">
+                    <input type="hidden" id="commonClass" name="commonClass" value="">
+                    <input list="common_class" onblur="addCommonClass(this)" placeholder="choose Common Class">
+
+                    <datalist id="common_class">
+
+
+                    </datalist>
+
+                </div>
+
+
+
+            </div>
+            <div class="config_sec" id="commonClassList">
+                Handle Common Class:
+
+            </div>
+            <div class="config_sec">
+                <div class="congi_label col-4">Prefix</div>
+                <div class="col-6 inputs">
+                    <input type="text" id="Prefix" name="commonClass" value="A">
+
+                </div>
+
+
+
+            </div>
+
+            <div class="config_sec">
+                <button onclick="handleComponent(this);$(this).attr('action','update')" action="add">Add
+                    Component</button>
+                <button onclick="handlelastCreatedDom()" style="margin-left: 12px;">Auto Select LAst created
+                    Dom</button>
+                <button onclick="generateCode()" style="margin-left: 12px;">Build Code</button>
+            </div>
+
+
+            <div class="config_sec">
+                <div class="congi_label col-4">flex-direction</div>
+                <div class="col-6 inputs">
+                    <div class="radio_btn" onclick="handleRadioBoxSeletion(this,'flexDirection')">row</div>
+                    <div class="radio_btn" onclick="handleRadioBoxSeletion(this,'flexDirection')">column</div>
+                    <div class="radio_btn" onclick="handleRadioBoxSeletion(this,'flexDirection')">row-reverse</div>
+                    <div class="radio_btn" onclick="handleRadioBoxSeletion(this,'flexDirection')">column-reverse</div>
+                    <div class="radio_btn" onclick="removeStyle(this,'flexDirection')">none</div>
+                    <input type="hidden" id="flexDirection">
+                </div>
+
+            </div>
+
+            <div class="config_sec">
+                <div class="congi_label col-4">flex-wrap</div>
+                <div class="col-6 inputs">
+                    <div class="radio_btn" onclick="handleRadioBoxSeletion(this,'flexWrap')">nowrap</div>
+                    <div class="radio_btn" onclick="handleRadioBoxSeletion(this,'flexWrap')">wrap</div>
+                    <div class="radio_btn" onclick="handleRadioBoxSeletion(this,'flexWrap')">wrap-reverse</div>
+                    <div class="radio_btn" onclick="removeStyle(this,'flexWrap')">none</div>
+                    <input type="hidden" id="flexWrap">
+                </div>
+
+            </div>
+
+            <div class="config_sec">
+                <div class="congi_label col-4">justify-content</div>
+                <div class="col-6 inputs">
+                    <div class="radio_btn" onclick="handleRadioBoxSeletion(this,'justifyContent')">flex-start</div>
+                    <div class="radio_btn" onclick="handleRadioBoxSeletion(this,'justifyContent')">flex-end</div>
+                    <div class="radio_btn" onclick="handleRadioBoxSeletion(this,'justifyContent')">center</div>
+                    <div class="radio_btn" onclick="handleRadioBoxSeletion(this,'justifyContent')">space-evenly</div>
+                    <div class="radio_btn" onclick="handleRadioBoxSeletion(this,'justifyContent')">space-around</div>
+                    <div class="radio_btn" onclick="handleRadioBoxSeletion(this,'justifyContent')">space-between</div>
+                    <div class="radio_btn" onclick="removeStyle(this,'justifyContent')">none</div>
+                    <input type="hidden" id="justifyContent">
+                </div>
+
+            </div>
+
+
+
+            <div class="config_sec">
+                <div class="congi_label col-4">align-items</div>
+                <div class="col-6 inputs">
+                    <div class="radio_btn" onclick="handleRadioBoxSeletion(this,'alignItems')">flex-start</div>
+                    <div class="radio_btn" onclick="handleRadioBoxSeletion(this,'alignItems')">flex-end</div>
+                    <div class="radio_btn" onclick="handleRadioBoxSeletion(this,'alignItems')">center</div>
+                    <div class="radio_btn" onclick="handleRadioBoxSeletion(this,'alignItems')">baseline</div>
+                    <div class="radio_btn" onclick="handleRadioBoxSeletion(this,'alignItems')">stretch</div>
+                    <div class="radio_btn" onclick="removeStyle(this,'alignItems')">none</div>
+                    <input type="hidden" id="alignItems">
+                </div>
+
+            </div>
+
+            <!-- <div class="config_sec">
+                    <div class="congi_label col-4">align-content</div>
+                    <div class="col-6 inputs">
+                        <div class="radio_btn" onclick="handleRadioBoxSeletion(this,'alignContent');">flex-start</div>
+                        <div class="radio_btn" onclick="handleRadioBoxSeletion(this,'alignContent')">flex-end</div>
+                        <div class="radio_btn" onclick="handleRadioBoxSeletion(this,'alignContent')">center</div>
+                        <div class="radio_btn" onclick="handleRadioBoxSeletion(this,'alignContent')">space-evenly</div>
+                        <div class="radio_btn" onclick="handleRadioBoxSeletion(this,'alignContent')">space-around</div>
+                        <div class="radio_btn" onclick="handleRadioBoxSeletion(this,'alignContent')">space-between</div>
+                        <div class="radio_btn" onclick="handleRadioBoxSeletion(this,'alignContent')">stretch</div>
+                        <div class="radio_btn" onclick="removeStyle(this,'alignContent')">none</div>
+                        <input type="hidden" id="alignContent">
+                    </div>
+                    
+                </div> -->
+
+            <div class="config_sec">
+                <div class="congi_label col-4">flex-shrink</div>
+                <div class="col-6 inputs">
+                    <input type="number" id="flexShrink" name="flexShrink" onblur="inputStyleToElement(this)">
+                </div>
+
+            </div>
+
+
+            <div class="config_sec">
+                <div class="congi_label col-4">flex-grow</div>
+                <div class="col-6 inputs">
+                    <input type="number" id="flexGrow" name="flexGrow" onblur="inputStyleToElement(this)">
+                </div>
+
+            </div>
+            <div class="config_sec">
+                <div class="congi_label col-4">flex-basic</div>
+                <div class="col-6 inputs">
+                    <input type="text" id="flexBasic" name="flexBasic" onblur="inputStyleToElement(this)">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <script src="codeParsing.js"></script>
+</body>
+
+</html>
